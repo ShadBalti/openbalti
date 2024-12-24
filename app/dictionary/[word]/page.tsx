@@ -33,7 +33,7 @@ const WordPage: React.FC<Params> = ({ params }) => {
           <span className="font-semibold">Meaning:</span> {wordData.meaning}
         </p>
         <p className="text-gray-700 mb-4">
-          <span className="font-semibold">Example:</span> "{wordData.example}"
+          <span className="font-semibold">Example:</span> &quot;{wordData.example}&quot;
         </p>
         <p className="text-gray-700 mb-4">
           <span className="font-semibold">Synonyms:</span> {wordData.synonyms.join(', ')}
