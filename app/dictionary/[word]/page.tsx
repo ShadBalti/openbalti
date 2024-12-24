@@ -1,13 +1,14 @@
 import React from 'react';
 import dictionary from '@/data/dictionary.json';
 
-interface Params {
+// Define the params type for the dynamic route
+interface WordPageProps {
   params: {
     word: string;
   };
 }
 
-const WordPage: React.FC<Params> = ({ params }) => {
+const WordPage: React.FC<WordPageProps> = ({ params }) => {
   const { word } = params;
 
   // Find the word in the dictionary
