@@ -1,14 +1,13 @@
 import React from 'react';
 import dictionary from '@/data/dictionary.json';
 
-// Define the params type for the dynamic route
 interface WordPageProps {
   params: {
     word: string;
   };
 }
 
-const WordPage: React.FC<WordPageProps> = ({ params }) => {
+const WordPage = ({ params }: WordPageProps) => {
   const { word } = params;
 
   // Find the word in the dictionary
@@ -21,6 +20,12 @@ const WordPage: React.FC<WordPageProps> = ({ params }) => {
         <p className="text-gray-600 mt-4">
           The word <span className="font-semibold">{word}</span> is not in our dictionary.
         </p>
+        <a
+          href="/"
+          className="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        >
+          Back to Home
+        </a>
       </div>
     );
   }
