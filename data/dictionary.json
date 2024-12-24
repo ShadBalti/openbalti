@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "word": "Julley",
+    "meaning": "Hello / Goodbye",
+    "example": "Julley! How are you?",
+    "part_of_speech": "interjection",
+    "synonyms": ["Greetings", "Salutations"],
+    "origin": "Traditional greeting in Balti culture"
+  },
+  {
+    "id": 2,
+    "word": "Yoge",
+    "meaning": "Yes",
+    "example": "Yoge, I will do it.",
+    "part_of_speech": "adverb",
+    "synonyms": ["Affirmative", "Sure"],
+    "origin": "Common response for agreement in Balti"
+  },
+  {
+    "id": 3,
+    "word": "Medha",
+    "meaning": "No",
+    "example": "Medha, I can't come.",
+    "part_of_speech": "adverb",
+    "synonyms": ["Negative", "Decline"],
+    "origin": "Widely used in refusal statements"
+  },
+  {
+    "id": 4,
+    "word": "Tsering",
+    "meaning": "Long life / Blessings",
+    "example": "Tsering to you and your family.",
+    "part_of_speech": "noun",
+    "synonyms": ["Longevity", "Blessings"],
+    "origin": "Derived from Tibetan cultural expressions"
+  },
+  {
+    "id": 5,
+    "word": "Shukria",
+    "meaning": "Thank you",
+    "example": "Shukria for your help!",
+    "part_of_speech": "noun",
+    "synonyms": ["Thanks", "Gratitude"],
+    "origin": "Borrowed from Persian / Urdu influences"
+  },
+  {
+    "id": 6,
+    "word": "Khush",
+    "meaning": "Happy",
+    "example": "I am feeling khush today.",
+    "part_of_speech": "adjective",
+    "synonyms": ["Joyful", "Cheerful"],
+    "origin": "Indigenous Balti word"
+  },
+  {
+    "id": 7,
+    "word": "Aqpa",
+    "meaning": "Father",
+    "example": "My aqpa is a farmer.",
+    "part_of_speech": "noun",
+    "synonyms": ["Dad", "Paternal figure"],
+    "origin": "Traditional familial term"
+  },
+  {
+    "id": 8,
+    "word": "Ama",
+    "meaning": "Mother",
+    "example": "Ama is preparing dinner.",
+    "part_of_speech": "noun",
+    "synonyms": ["Mom", "Maternal figure"],
+    "origin": "Cultural reference for mother"
+  },
+  {
+    "id": 9,
+    "word": "Baek",
+    "meaning": "Brother",
+    "example": "My baek is very protective of me.",
+    "part_of_speech": "noun",
+    "synonyms": ["Sibling", "Brother"],
+    "origin": "Common term for male siblings"
+  },
+  {
+    "id": 10,
+    "word": "Shet",
+    "meaning": "Sister",
+    "example": "My shet is very kind.",
+    "part_of_speech": "noun",
+    "synonyms": ["Sibling", "Sister"],
+    "origin": "Widely used for female siblings"
+  },
+  {
+    "id": 11,
+    "word": "Drikpa",
+    "meaning": "Friend",
+    "example": "My drikpa came to visit me today.",
+    "part_of_speech": "noun",
+    "synonyms": ["Companion", "Buddy"],
+    "origin": "Rooted in traditional relationships"
+  },
+  {
+    "id": 12,
+    "word": "Balti",
+    "meaning": "The language spoken in Baltistan",
+    "example": "Balti is a rich and ancient language.",
+    "part_of_speech": "noun",
+    "synonyms": ["Language of Baltistan"],
+    "origin": "Associated with the culture and heritage of Baltistan"
+  },
+  {
+    "id": 13,
+    "word": "Chusmo",
+    "meaning": "Story / Tale",
+    "example": "Tell me a chusmo about the mountains.",
+    "part_of_speech": "noun",
+    "synonyms": ["Narrative", "Fable"],
+    "origin": "Traditional storytelling culture"
+  },
+  {
+    "id": 14,
+    "word": "Dawat",
+    "meaning": "Feast / Invitation",
+    "example": "We are hosting a dawat this evening.",
+    "part_of_speech": "noun",
+    "synonyms": ["Banquet", "Gathering"],
+    "origin": "Cultural tradition of hospitality"
+  },
+  {
+    "id": 15,
+    "word": "Sengge",
+    "meaning": "Lion",
+    "example": "Sengge is a symbol of courage.",
+    "part_of_speech": "noun",
+    "synonyms": ["Big cat", "King of the jungle"],
+    "origin": "Rooted in Balti folklore"
+  }
+]
