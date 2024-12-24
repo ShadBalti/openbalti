@@ -21,7 +21,7 @@ const WordCard: React.FC<WordCardProps> = ({ word }) => {
         <span className="font-semibold">Meaning:</span> {word.meaning}
       </p>
       <p className="text-gray-700 mb-4">
-        <span className="font-semibold">Example:</span> "{word.example}"
+        <span className="font-semibold">Example:</span> &quot;{word.example}&quot;
       </p>
       <p className="text-gray-700 mb-4">
         <span className="font-semibold">Synonyms:</span> {word.synonyms.join(', ')}

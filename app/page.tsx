@@ -27,7 +27,7 @@ export default function HomePage() {
         {results.length > 0 ? (
           results.map((word) => <WordCard key={word.id} word={word} />)
         ) : (
-          <p className="text-gray-500">No results found for "{searchTerm}"</p>
+          <p className="text-gray-500">No results found for &quot;{searchTerm}&quot;</p>
         )}
       </div>
     </div>

@@ -21,7 +21,7 @@ export default async function WordPage({ params }: { params: { word: string } })
     <div>
       <h1 className="text-3xl font-bold">{word.word}</h1>
       <p className="mt-2">{word.meaning}</p>
-      <p className="italic mt-4">"{word.example}"</p>
+      <p className="italic mt-4">&quot;{word.example} &quot;</p>
     </div>
   );
 }
