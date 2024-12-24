@@ -1,5 +1,6 @@
 import React from 'react';
 import dictionary from '@/data/dictionary.json';
+import Link from 'next/link'; // Import Link from next/link
 
 interface WordPageProps {
   params: {
@@ -20,12 +21,11 @@ const WordPage = ({ params }: WordPageProps) => {
         <p className="text-gray-600 mt-4">
           The word <span className="font-semibold">{word}</span> is not in our dictionary.
         </p>
-        <a
-          href="/"
-          className="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-        >
-          Back to Home
-        </a>
+        <Link href="/">
+          <a className="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+            Back to Home
+          </a>
+        </Link>
       </div>
     );
   }
