@@ -1,27 +1,49 @@
-import { notFound } from 'next/navigation';
+import React from 'react';
+import dictionary from '@/data/dictionary.json';
 
-async function getWordData(word: string) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/dictionary?q=${word}`);
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
-  }
-  return res.json();
+interface Params {
+  params: {
+    word: string;
+  };
 }
 
-export default async function WordPage({ params }: { params: { word: string } }) {
-  const wordData = await getWordData(params.word);
+const WordPage: React.FC<Params> = ({ params }) => {
+  const { word } = params;
 
-  if (wordData.length === 0) {
-    notFound();
+  // Find the word in the dictionary
+  const wordData = dictionary.find((entry) => entry.word.toLowerCase() === word.toLowerCase());
+
+  if (!wordData) {
+    return (
+      <div className="container mx-auto text-center py-10">
+        <h1 className="text-3xl font-bold text-red-500">Word not found</h1>
+        <p className="text-gray-600 mt-4">
+          The word <span className="font-semibold">{word}</span> is not in our dictionary.
+        </p>
+      </div>
+    );
   }
-
-  const word = wordData[0];
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold">{word.word}</h1>
-      <p className="mt-2">{word.meaning}</p>
-      <p className="italic mt-4">&quot;{word.example} &quot;</p>
+    <div className="container mx-auto py-10">
+      <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-lg">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">{wordData.word}</h1>
+        <p className="text-gray-600 text-sm italic mb-2">{wordData.part_of_speech}</p>
+        <p className="text-gray-700 mb-4">
+          <span className="font-semibold">Meaning:</span> {wordData.meaning}
+        </p>
+        <p className="text-gray-700 mb-4">
+          <span className="font-semibold">Example:</span> "{wordData.example}"
+        </p>
+        <p className="text-gray-700 mb-4">
+          <span className="font-semibold">Synonyms:</span> {wordData.synonyms.join(', ')}
+        </p>
+        <p className="text-gray-700">
+          <span className="font-semibold">Origin:</span> {wordData.origin}
+        </p>
+      </div>
     </div>
   );
-}
+};
+
+export default WordPage;
